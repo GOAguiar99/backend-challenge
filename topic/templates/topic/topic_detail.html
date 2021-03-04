@@ -1,0 +1,27 @@
+{% extends "topic/base.html" %}
+
+{% block title %}{{topic.title}}{% endblock %}
+
+{% block content %}
+        <article>
+            <h2>{{topic.title}}</h2>
+            <p class="date">
+                Criado em {{topic.created}} por {{topic.author}}
+            </p>
+            {{ topic.description|linebreaks|truncatewords:30 }}
+        </article>
+            {% for post in post_list %}
+        <article>
+            <h2>
+                <a href="/red/post/{{post.get_absolute_url}}">
+                    {{post.title}}
+                </a>
+            </h2>
+            <p class="date">
+                Criado em {{post.created}} por {{post.author}}
+            </p>
+            {{ post.body|linebreaks|truncatewords:20 }}
+        </article>
+    {%endfor %}
+
+{% endblock %}
