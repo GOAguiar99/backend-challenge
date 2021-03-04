@@ -1,0 +1,3 @@
+# backend-challenge
+
+Hello guys, this is what I did in the last few days, the challenge was not easy but I learned a lot in that time. My knowledge in python was not that much and now I know a lot about it, for example how to use functions, classes, etc. I didn't finish the challenge due to the difficulty in importing views from different apps into the same template, although I knew how to do this in the same app, so the blog was unfinished, unfortunately. Anyway, I had so much fun learning Django and so many tools that can be used with the python language. I am sure that I will be studying that in the near future to get better and better. Thanks for the opportunity.
